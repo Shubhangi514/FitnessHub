@@ -11,3 +11,128 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* CSS Reset */
+* {
+  padding: 0;
+  margin: 0;
+}
+.story {
+  font-family: "Baloo Bhai", cursive;
+  color: rgb(250, 250, 250);
+  margin: 0px;
+  padding: 0px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:100vw 100vh;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.left {
+  width: 4%;
+  /* border: 2px solid red; */
+}
+.left img {
+  background-color: transparent;
+  line-height: inherit;
+  color: #059;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  width: 60px;
+  /* filter: invert(100%); */
+}
+
+.mid {
+  font-family: "Times New Roman", Times, serif;
+  color: #9f95b4;
+  width: 10%;
+  /* border: 2px solid rgb(74, 72, 94); */
+}
+.right {
+  font-family: Arial, sans-serif;
+  color: #9f95b4;
+  right: 623px;
+  display: block;
+  /* border: 2px solid yellow; */
+  width: 20%;
+  margin: 20px 0px;
+}
+.head {
+  margin-bottom: 3px;
+  text-decoration: underline;
+}
+.container {
+  display: flex;
+  overflow: auto;
+  flex-direction: column;
+  /* align-items: center; */
+  color: black;
+}
+.gallery {
+  margin: 5px;
+  border: 1px solid #ffffff;
+  float: left;
+  width: 390px;
+  background: rgba(232, 231, 231, 0.659);
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.gallery:hover .desc {
+  color: black;
+  background: white;
+  /* transition: all 0.7s ease-in-out; */
+  animation: anime 1s ease-in-out forwards;
+}
+
+@keyframes anime {
+  from {
+    height: 0px;
+    padding-top: 0px;
+  }
+  to {
+    padding-top: 20px;
+    height: 200px;
+  }
+}
+.gallery img {
+  border-radius: 5px;
+  width: 25vw;
+  /* height: auto; */
+}
+.desc {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0px 40px;
+  text-align: justify;
+  font-size: 15px;
+  color: rgb(75, 75, 75);
+  height: 0px;
+  overflow-y: auto;
+}
+.desc::-webkit-scrollbar {
+  display: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+footer {
+  padding: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  background: #393939;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+}
